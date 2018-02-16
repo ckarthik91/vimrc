@@ -24,10 +24,28 @@ set mat=2
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Display line numbers
+set nu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
 
-" set 
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+
+" Use Unix as the standard file type
+set ffs=unix,dos
+
+"""""""""""""""""""""""""""""""""""""""""""""""""" 
+" => Files, backups and undo
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Turn backup off
+set nobackup
+set nowb
+set noswapfile
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
