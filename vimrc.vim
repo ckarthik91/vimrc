@@ -61,13 +61,25 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebread on 100 characters
+" Linebreak on 500 characters
 set lbr
-set tw=100
+set tw=500
 
 set ai "Auto Indent
 set si "smart indent
 set wrap "Wrap lines
 
-""""""""""""""""""""""""""""""""""""""""""""""""""                                                      
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Status Line
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Always show the status line
+set laststatus=2
+
+" Format the status line
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+" my own status line, 
+set statusline=\File:\%.15F\ POS:\%l\,\%c%<\ CWD:\%r%{getcwd()}%h\ FileType:\%y\  " Left align 
+set statusline+=%=Percentage:\%p%%\ Total-Lines:\%L\  " Right Align '+' symbol builds up status line adding to previous line
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
