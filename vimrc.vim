@@ -84,11 +84,24 @@ set laststatus=2
 "status line, 
 "set statusline=\File:\%.15F\ POS:\%l\,\%c%<\ CWD:\%r%{getcwd()}%h\ FileType:\%y\  " Left align 
 "set statusline+=%=Percentage:\%p%%\ Total-Lines:\%L\  " Right Align '+' symbol builds up status line adding to previous line
+
 "
 " an alternate, compact status line
 " 
 set statusline=File:%.15F  " Left align
-set statusline+=%= |  
+set statusline+=%<\        " Truncate here if small window
+set statusline+=\ CWD:\%r%{getcwd()}%h\  " Print current working directory
+set statusline+=\ Filetype:\%y\  " File type 
+set statusline+=%=         " RIght align below parameters
+set statusline+=\|         " seperator   
+set statusline+=\ Li:\%4l  " current line number
+set statusline+=\/         " division seperator
+set statusline+=%4L\        " Total lines
+set statusline+=\|         " seperator   
+set statusline+=\ %3p\       " percentage of file
+set statusline+=\|         " seperator   
+set statusline+=\ Col:\%3c
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
 
