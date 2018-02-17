@@ -27,6 +27,12 @@ set foldcolumn=1
 " Display line numbers
 set nu
 
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -75,11 +81,14 @@ set wrap "Wrap lines
 " Always show the status line
 set laststatus=2
 
-" Format the status line
-"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
-" my own status line, 
-set statusline=\File:\%.15F\ POS:\%l\,\%c%<\ CWD:\%r%{getcwd()}%h\ FileType:\%y\  " Left align 
-set statusline+=%=Percentage:\%p%%\ Total-Lines:\%L\  " Right Align '+' symbol builds up status line adding to previous line
+"status line, 
+"set statusline=\File:\%.15F\ POS:\%l\,\%c%<\ CWD:\%r%{getcwd()}%h\ FileType:\%y\  " Left align 
+"set statusline+=%=Percentage:\%p%%\ Total-Lines:\%L\  " Right Align '+' symbol builds up status line adding to previous line
+"
+" an alternate, compact status line
+" 
+set statusline=File:%.15F  " Left align
+set statusline+=%= |  
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
 
