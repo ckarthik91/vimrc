@@ -88,7 +88,7 @@ set laststatus=2
 "
 " an alternate, compact status line
 " 
-set statusline=File:%.15F  " Left align
+set statusline=%.15F  " Left align
 set statusline+=%<\        " Truncate here if small window
 set statusline+=\ CWD:\%r%{getcwd()}%h\  " Print current working directory
 set statusline+=\ Filetype:\%y\  " File type 
@@ -103,5 +103,3 @@ set statusline+=\|         " seperator
 set statusline+=\ Col:\%3c
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-
-
