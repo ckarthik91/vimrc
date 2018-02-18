@@ -98,7 +98,7 @@ set statusline+=\ Li:\%4l  " current line number
 set statusline+=\/         " division seperator
 set statusline+=%4L\        " Total lines
 set statusline+=\|         " seperator   
-set statusline+=\ %3p\       " percentage of file
+set statusline+=\ %3p%%\    " percentage of file
 set statusline+=\|         " seperator   
 set statusline+=\ Col:\%3c
 
