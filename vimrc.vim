@@ -103,3 +103,10 @@ set statusline+=\|         " seperator
 set statusline+=\ Col:\%3c
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
+" => the following tricks are taken from Damian Conway, "More Instantly Better Vim" - OSCON 2013 [ https://www.youtube.com/watch?v=aHm36-na4-4 ]
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Make the 81st Column stand out
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
